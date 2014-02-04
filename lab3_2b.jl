@@ -19,3 +19,4 @@ end
 
 x = 127*rand(1024);
 writeASCII(x,"lab3_2b.txt");
+#writeArray(x,"lab3_2b.txt");
