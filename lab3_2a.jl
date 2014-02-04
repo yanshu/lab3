@@ -4,6 +4,9 @@ function convertToAscii(x::Array)
     return ascii(x)
 end
 
+function printSTDOUT(x::String)
+    @printf(STDOUT,"%s",convertToAscii(x))
+
 x = 127*rand(1024);	#create an array of random number from 0 to 127
-@printf(STDOUT,"%s",convertToAscii(x))
-print ("\n", @elapsed printAscii(x));
+printSTDOUT(x);
+print ("\n", @elapsed printSTDOUT(x));
