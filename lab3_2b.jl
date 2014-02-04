@@ -6,7 +6,7 @@ function printAscii(x::Array)
 end
 
 function writeASCII(x::Array,file_name)
-	open(file_name,"r+);
+	open(file_name,"r+");
 	x = uint8(x);
 	x = ascii(x);
 	writecsv(file_name,x);
