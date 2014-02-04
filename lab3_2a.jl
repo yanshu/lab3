@@ -1,12 +1,13 @@
-include("path/lab3_2a.jl");
 function convertToAscii(x::Array)
     x = uint8(x)
+    x = ascii(x)
     return ascii(x)
 end
 
-function printSTDOUT(x::String)
+function printSTDOUT(x::Array)
     @printf(STDOUT,"%s",convertToAscii(x))
+end
 
 x = 127*rand(1024);	#create an array of random number from 0 to 127
 printSTDOUT(x);
-print ("\n", @elapsed printSTDOUT(x));
+println("\n","time = ", @elapsed printSTDOUT(x));
