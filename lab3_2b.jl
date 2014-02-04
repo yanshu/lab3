@@ -1,4 +1,4 @@
-include"path/lab3_2b.jl"
+include("path/lab3_2b.jl");
 
 function printAscii(x::Array)
     x = uint8(x);
@@ -6,7 +6,7 @@ function printAscii(x::Array)
 end
 
 function writeASCII(x::Array,file_name)
-	open(file_name,"r+);
+	open(file_name,"r+");
 	x = uint8(x);
 	x = ascii(x);
 	writecsv(file_name,x);
@@ -18,3 +18,4 @@ function writeArray(x::Array,file_name)
 end
 
 x = 127*rand(1024);
+writeASCII(x,"lab3_2b.txt");
