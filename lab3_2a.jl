@@ -4,7 +4,8 @@ function convertToAscii(x::Array)
     return ascii(x)
 end
 
-function printSTDOUT(x::Array)
-    @printf(STDOUT,"%s",convertToAscii(x))
+function printSTDOUT(x::ASCIIString)
+    @printf(STDOUT,"%s",x);
 end
+
 
