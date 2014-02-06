@@ -8,7 +8,7 @@ function getArrayAndTime()
     println("\n","time to print ASCII to STDOUT = ", @elapsed printSTDOUT(x));
     println("\n","time to write ASCII to file = ", @elapsed writeASCII(x,file_name));
     println("\n","time to read ASCII = ", @elapsed readASCII(file_name));
-
+    println("\n","time to read ASCII = ", @elapsed readASCII(file_name));
 end
 
 getArrayAndTime()
