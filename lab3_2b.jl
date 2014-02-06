@@ -6,7 +6,7 @@ end
 
 function readASCII(file_name)
         s = open(file_name,"r");
-        readline(s);
+        readlines(s);
         close(s);
 end
 
