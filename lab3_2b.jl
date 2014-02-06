@@ -1,7 +1,6 @@
-function writeASCII(x::ASCIIString,file_name)
+function writeASCII(x::Array,file_name)
         s = open(file_name,"w+");   # create the file
-        write(s,x);         # write the ASCIIString to file
-        #writecsv(s,x);
+        writecsv(s,x);
         close(s);
 end
 
