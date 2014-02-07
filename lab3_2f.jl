@@ -17,7 +17,6 @@ end
 
 function readOneBinary(file_name,x::Array,i::Int)
         y = {x[i]};
-        #writeBinary(y,file_name);
         s = open(file_name,"r");
         #read(s,y);
         close(s);
